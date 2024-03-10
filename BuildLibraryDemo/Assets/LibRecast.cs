@@ -16,5 +16,7 @@ public static class LibRecast
     [DllImport(LibName)]
     public extern static int TestAPI();
 
+    [DllImport(LibName)]
+    public extern static float CalcDistance(float fSrcEntityX, float fSrcEntityY, float fDstEntityX, float fDstEntityY);
 
 }

@@ -2,6 +2,7 @@
 #ifdef _GNUC_
 
 #include <jni.h>
+#include<math.h>
 #define DLL_EXPORT JNIEXPORT
 
 #else
@@ -15,12 +16,8 @@
 
 extern "C"
 {
-
-
 	DLL_EXPORT int TestAPI();
-
-
-
+	DLL_EXPORT float CalcDistance(float fSrcEntityX, float fSrcEntityY, float fDstEntityX, float fDstEntityY);
 }
 
 
